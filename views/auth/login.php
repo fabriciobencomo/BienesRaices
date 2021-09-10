@@ -5,6 +5,7 @@
         </div>
     <?php endforeach?>
     <h1>Iniciar Sesion</h1>
+    <a href="/signup" class="boton boton-amarillo">Crear Usuario</a>
 
     <form method="POST" class="formulario" novalidate action="/login">
         <fieldset>

@@ -25,6 +25,7 @@ $router->post('/contacto', [PageController::class,'contacto']);
 
 //-----Autenticacion
 $router->get('/login',  [LoginController::class,'login']);
+$router->get('/signup',  [LoginController::class,'create']);
 $router->post('/login',  [LoginController::class,'login']);
 $router->get('/logout',  [LoginController::class,'logout']);
 

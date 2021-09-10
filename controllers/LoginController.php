@@ -40,4 +40,18 @@ class LoginController{
 
         header('Location: /');
     }
+
+    public static function create(Router $router){
+
+        $usuario['email'] = "correo@jhmail.com";
+        $password = "123";
+        $usuario['password'] = password_hash($password, PASSWORD_BCRYPT);
+
+        $admin = new Admin($usuario);
+
+        $admin->Save();
+
+        $router->render('auth/CreateUser');
+        
+    }
 }
