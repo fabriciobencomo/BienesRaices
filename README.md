@@ -19,8 +19,10 @@ de los departamentos, clientes y vendedores.
 
 # Ajustes
 
-- En la carpeta includes/confing esta el archivo databaseSchema.php Es importante crear la base de datos localmente.
+- En la carpeta includes/Config esta el archivo databaseSchema.php Es importante crear la base de datos localmente.
 - Ir a la carpeta includes/Config Dentro veras el archivo database.php es importante colocar los datos correctos en la variables para conectar corretamente con la DB
+- Para Ingresar al administrador debes colocar en la url /login esto debido a que es una zona privada 
+- Para Crear un nuevo usuario Debes entrar en Controllers/LoginController Y editar la funcion Create para Colocar el email y password deseado
 
 # Deployment :rocket:
 
